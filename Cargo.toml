@@ -7,7 +7,7 @@ readme = "README.MD"
 description = "A mostly efficient topological algorithm for finding all peaks in a 1-D signal."
 repository = "https://github.com/caseykneale/topological_peak_detection"
 license = "MIT"
-keywords = ["topology", "persistance", "peak", "finding", "finder", "signal"]
+keywords = ["topology", "persistance", "peak", "finding", "signal"]
 categories = ["mathematics", "science"]
 
 [dependencies]
