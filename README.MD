@@ -1,7 +1,5 @@
 # topological_peak_detection
 
-License: MIT
-
 This crate finds peaks inside of 1-D signals (vectors of `PartialOrd` satisfying types) using topological persistance.
 
 ## What it does:
@@ -16,6 +14,8 @@ This crate finds peaks inside of 1-D signals (vectors of `PartialOrd` satisfying
 Here's a simple example:
 # Examples
 ```rust
+use core::f32::consts::PI;
+...
 let tst_vec:Vec<f32> = (0..6001)
             .map(|x| ((x as f32 / 1000_f32) * PI).sin())
             .collect();
