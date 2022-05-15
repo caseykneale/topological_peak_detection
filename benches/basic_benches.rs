@@ -1,13 +1,13 @@
 use std::f32::consts::PI;
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
 
-use topological_peak_detection::top_pe::{
+use topological_peak_detection::{
     find_homologies, 
     get_peaks,
 };
 
 fn basic_peaks(v: &Vec<f32>){
-    let homologies = find_homologies(v);
+    let homologies = find_homologies(v).unwrap();
     let _x = get_peaks(&homologies);
 }
 
